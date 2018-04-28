@@ -1,2 +1,2 @@
-# ReactPractice
-React練習用
+# Praqtice4TheNextJob
+仕事のための練習用
