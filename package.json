@@ -19,5 +19,8 @@
   "homepage": "https://github.com/katai5plate/ReactPractice#readme",
   "keywords": [
     "test"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }
