@@ -1,0 +1,3 @@
+languare: node_js
+script:
+  - npm start
