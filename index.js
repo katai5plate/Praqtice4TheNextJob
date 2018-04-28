@@ -1,7 +1,6 @@
 (() => {
-  new Array(100)
-    .fill()
-    .map((_, i) => i + 1)
+  const _ = require("lodash");
+  _.range(1,101)
     .forEach((v) => {
       const f = v % 3 === 0;
       const b = v % 5 === 0;
