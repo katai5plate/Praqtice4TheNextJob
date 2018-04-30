@@ -4,10 +4,10 @@ export default v => {
     .reduce((p, c) => {
       const f = c % 3 === 0;
       const b = c % 5 === 0;
-      if (f & b) p.push("fizzbuzz");
-      else if (f) p.push("fizz");
-      else if (b) p.push("buzz");
-      else p.push(c);
+      if (f & b) p =  [...p, "fizzbuzz"];
+      else if (f) p = [...p, "fizz"];
+      else if (b) p = [...p, "buzz"];
+      else p =        [...p, c];
       return p;
     }, [])
 };
