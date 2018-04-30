@@ -1,4 +1,5 @@
 languare: node_js
 script:
   - npm install
+  - npm test
   - npm start
