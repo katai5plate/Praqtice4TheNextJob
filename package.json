@@ -6,8 +6,9 @@
   "scripts": {
     "build": "babel src/ -d out/ --presets=env",
     "start": "npm run build && node out/show.js",
-    "lint": "eslint src/*.js",
     "lint-init": "eslint --init",
+    "lint": "eslint src/*.js",
+    "lint-fix": "eslint src/*.js --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
