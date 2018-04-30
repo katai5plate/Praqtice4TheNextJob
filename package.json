@@ -6,6 +6,9 @@
   "scripts": {
     "build": "babel src/ -d out/ --presets=env",
     "start": "npm run build && node out/show.js",
+    "lint-init": "eslint --init",
+    "lint": "eslint src/*.js",
+    "lint-fix": "eslint src/*.js --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +28,12 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
   }
 }
