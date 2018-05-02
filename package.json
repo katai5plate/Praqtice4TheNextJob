@@ -4,13 +4,11 @@
   "description": "this is code of testing.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src/ -d out/ --presets=env",
-    "start": "npm run build && node out/show.js",
+    "start": "npm run lint && npm run build && node out/show.js",
     "lint-init": "eslint --init",
-    "lint": "eslint src/*.js",
-    "lint-fix": "eslint src/*.js --fix",
-    "test": "jest",
-    "test-prev": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/*.js --fix",
+    "build": "babel src/ -d out/ --presets=env",
+    "test": "eslint test/*.js && jest test/"
   },
   "repository": {
     "type": "git",
@@ -34,6 +32,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.1",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "jest-cli": "^22.4.3"
