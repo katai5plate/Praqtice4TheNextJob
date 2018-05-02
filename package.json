@@ -6,9 +6,9 @@
   "scripts": {
     "start": "npm run lint && npm run build && node out/show.js",
     "lint-init": "eslint --init",
-    "lint": "eslint src/*.js test/*.js --fix",
+    "lint": "eslint src/*.js --fix",
     "build": "babel src/ -d out/ --presets=env",
-    "test": "jest test"
+    "test": "eslint test/*.js && jest test/"
   },
   "repository": {
     "type": "git",
