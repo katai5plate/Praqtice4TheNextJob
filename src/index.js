@@ -7,7 +7,6 @@ export default (v) => {
     val = 0;
   } else if (Number(val) < 0) {
     throw new Error();
-    return [];
   } else {
     val = parseInt(v, 10);
   }
