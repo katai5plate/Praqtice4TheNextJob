@@ -8,7 +8,7 @@
     "lint-init": "eslint --init",
     "lint": "eslint src/*.js test/*.js --fix",
     "build": "babel src/ -d out/ --presets=env",
-    "test": "npm run build-test && jest out/test"
+    "test": "jest test"
   },
   "repository": {
     "type": "git",
