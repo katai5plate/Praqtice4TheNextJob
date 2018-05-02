@@ -4,7 +4,7 @@
   "description": "this is code of testing.",
   "main": "index.js",
   "scripts": {
-    "start": "npm run lint && npm run build && node out/show.js",
+    "start": "npm run lint && npm run build && npm test && node out/show.js",
     "lint-init": "eslint --init",
     "lint": "eslint src/*.js --fix",
     "build": "babel src/ -d out/ --presets=env",

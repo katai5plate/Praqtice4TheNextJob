@@ -43,3 +43,24 @@ test('戻り値の要素の期待値が 3 または 5 の倍数でない場合�
     }
   }
 });
+
+test('引数を省略した場合、100 とみなす。', () => {
+  expect(FizzBuzz()).toHaveLength(FizzBuzz(100).length);
+});
+
+test('引数に負数を指定した場合、例外を発生させる。', () => {
+  for (let i = 1; i < fb.length; i += 1) {
+    let f = false;
+    try {
+      FizzBuzz(-i);
+    } catch (e) {
+      f = true;
+    }
+    expect(f).toBe(true);
+  }
+});
+
+test('引数に NaN を指定した場合、0 とみなす。', () => {
+  expect(FizzBuzz('あ')).toHaveLength(FizzBuzz(0).length);
+  expect(FizzBuzz(NaN)).toHaveLength(FizzBuzz(0).length);
+});
