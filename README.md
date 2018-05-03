@@ -3,7 +3,7 @@
 
 # Install
 ```batchfile
-git clone https://github.com/katai5plate/Praqtice4TheNextJob && cd Praqtice4TheNextJob && pm i && npm start 15
+git clone https://github.com/katai5plate/Praqtice4TheNextJob && cd Praqtice4TheNextJob && npm i && npm start 15
 ```
 
 # Run
